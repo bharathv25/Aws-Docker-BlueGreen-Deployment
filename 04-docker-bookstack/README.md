@@ -49,6 +49,8 @@ base64:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
 Step 4 — Create docker-compose.yml
 
+Files
+- [docker-compose.yml](./docker-compose.yml) — Full Docker Compose configuration
 
 Step 5 — Start Containers
 
@@ -71,3 +73,11 @@ depends_on → ensures MySQL starts before BookStack
 volumes → persists MySQL data even if container restarts
 
 restart: unless-stopped → auto restarts on crash
+
+Screenshots
+
+BookStack Running
+![BookStack Working](Book-stack-working.png)
+
+All Containers Running
+![Containers](containers-upstate.png)
