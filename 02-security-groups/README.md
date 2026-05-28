@@ -46,3 +46,11 @@ Key Concepts
 
 Screenshots
 
+Security Groups List
+![Security Groups List](Security-groups-list.png)
+
+Public SG Inbound Rules
+![Public SG](public-sg-inbound-rules.png)
+
+Private SG Inbound Rules
+![Private SG](privatesg-inbound-rules.png)
