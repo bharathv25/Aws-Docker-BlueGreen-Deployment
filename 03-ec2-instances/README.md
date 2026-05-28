@@ -66,16 +66,22 @@ Private EC2 has no public IP so we jump through Public EC2:
 1. Copy key to Public EC2:
 
 nano ~/.ssh/my-key.pem
+
 Paste contents of my-key.pem
+
 chmod 400 ~/.ssh/my-key.pem
 
 SSH from Public EC2 to Private EC2:
+
 ssh -i ~/.ssh/my-key.pem ubuntu@<private-ec2-private-ip>
 
 Key Concepts
 Public EC2 → internet facing, runs BookStack + Nginx + MySQL primary
+
 Private EC2 → no public IP, runs MySQL replica only
-Bastion Host → Public EC2 acts as jump server to reach Private EC2
+
+Bastion Host → Public EC2 acts as jump server to reach Private EC2  
+
 Same key pair → makes SSH jump easier
 
 Screenshots
