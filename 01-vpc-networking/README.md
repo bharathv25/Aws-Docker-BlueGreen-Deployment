@@ -83,5 +83,3 @@ Public Route Table
 
 Private Route Table
 ![Private RT](private-rt-route.png)
-
-Screenshots
