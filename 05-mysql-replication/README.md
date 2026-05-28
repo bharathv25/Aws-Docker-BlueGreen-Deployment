@@ -124,5 +124,5 @@ Slave Running Status
 ![Slave Status](slave-running-status.png)
 
 Private EC2 MySQL Container
-![Private EC2 SQL Status](priavteec2-sqlstatus.png)
+![Private EC2 SQL Status](priavteec2-container=running.png)
 
