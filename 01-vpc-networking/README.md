@@ -67,4 +67,21 @@ Step 7 — Create Private Route Table
 - NAT Gateway→ allows Private EC2 to download packages but blocks inbound internet traffic
 - Route Tables → control where network traffic is directed
 
+Screenshots For Reference
+
+VPC Created
+![VPC Created](vpc-created.png)
+
+Subnets
+![Subnets](subnets.png)
+
+NAT Gateway Available
+![NAT Gateway](nat-gateway-available.png)
+
+Public Route Table
+![Public RT](public-rt-route.png)
+
+Private Route Table
+![Private RT](private-rt-route.png)
+
 Screenshots
