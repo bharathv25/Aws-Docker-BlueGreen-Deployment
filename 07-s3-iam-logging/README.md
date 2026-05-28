@@ -7,6 +7,7 @@ to the Public EC2 instance. No access keys needed — IAM Role
 handles authentication securely.
 
 Architecture
+
 Public EC2
 ↓ (IAM Role - no keys needed)
 MySQL Container
@@ -75,11 +76,13 @@ sudo aws s3 cp /tmp/mysql-general.log s3://your-bucket-name/logs/general-$(date 
 
 echo "Log uploaded successfully!"
 
+
 Step 7 — Run Script
 
 chmod +x upload-logs.sh
 
 ./upload-logs.sh
+
 
 Step 8 — Verify in S3
 
@@ -88,6 +91,7 @@ Go to S3 → your bucket → logs folder
 Log file should appear with timestamp 
 
 Key Concepts
+
 IAM Role → gives EC2 permission to access S3 without keys
 
 General Log → records every SQL query executed
