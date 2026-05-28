@@ -96,3 +96,18 @@ Same Database → both Blue and Green share same MySQL
 Staging → test new version on Green before going live
 Files
 nginx.conf — Nginx reverse proxy configuration
+
+Screenshots
+Files
+- [nginx.conf](./nginx.conf) — Nginx reverse proxy configuration
+
+Screenshots
+
+Blue Container - Live (Port 80)
+![Blue Loading](loading-port80-blue.png)
+
+Green Container - Staging (Port 9090)
+![Green Loading](loading-port9090-green.png)
+
+Nginx Config File
+![Nginx Config](nginxconf.png)
