@@ -120,9 +120,13 @@ server-id → must be unique for each MySQL instance
 
 Screenshots
 
-Slave Running Status
+Slave Running Status (IO & SQL Both Yes)
+
 ![Slave Status](slave-running-status.png)
 
-Private EC2 MySQL Container
-![Private EC2 SQL Status](priavteec2-container-running.png)
+
+
+Private EC2 MySQL Container Running
+
+![Private EC2 Container](privateec2-container-running.png)
 
