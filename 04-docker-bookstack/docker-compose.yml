@@ -1,1 +1,62 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: db
+    command: --server-id=1 --log-bin=binlog --binlog-format=ROW
+    environment:
+      - MYSQL_ROOT_PASSWORD=your_password
+      - MYSQL_DATABASE=bookstack
+      - MYSQL_USER=bookstack
+      - MYSQL_PASSWORD=your_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: unless-stopped
 
+  bookstack-blue:
+    image: solidnerd/bookstack:latest
+    container_name: bookstack-blue
+    environment:
+      - DB_HOST=db
+      - DB_DATABASE=bookstack
+      - DB_USERNAME=bookstack
+      - DB_PASSWORD=your_password
+      - APP_KEY=your_app_key
+      - APP_URL=http://your_ec2_public_ip
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  bookstack-green:
+    image: solidnerd/bookstack:latest
+    container_name: bookstack-green
+    environment:
+      - DB_HOST=db
+      - DB_DATABASE=bookstack
+      - DB_USERNAME=bookstack
+      - DB_PASSWORD=your_password
+      - APP_KEY=your_app_key
+      - APP_URL=http://your_ec2_public_ip
+    ports:
+      - "9090:8080"
+    depends_on:
+      - db
+    restart: unless-stopped
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - bookstack-blue
+      - bookstack-green
+    restart: unless-stopped
+
+volumes:
+  db_data:
