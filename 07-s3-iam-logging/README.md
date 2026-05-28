@@ -100,4 +100,20 @@ Timestamped files → each upload creates new file
 
 s3:PutObject → minimum permission needed to upload
 
+Files
+- [upload-logs.sh](./upload-logs.sh) — Log upload automation script
 
+Screenshots
+
+Public EC2 Attached to IAM Role
+![IAM Role Attached](publicec2-attached-toIAM.png)
+
+
+
+ Log Upload Successful
+![Log Upload](log-successfull-upload.png)
+
+
+
+S3 Bucket Log File
+![S3 Upload](successfull-log-upload.png)
