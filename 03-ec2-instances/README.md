@@ -76,6 +76,7 @@ SSH from Public EC2 to Private EC2:
 ssh -i ~/.ssh/my-key.pem ubuntu@<private-ec2-private-ip>
 
 Key Concepts
+
 Public EC2 → internet facing, runs BookStack + Nginx + MySQL primary
 
 Private EC2 → no public IP, runs MySQL replica only
