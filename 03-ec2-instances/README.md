@@ -62,10 +62,11 @@ Using EC2 Instance Connect:
 
 Step 5 — SSH into Private EC2 via Jump
 Private EC2 has no public IP so we jump through Public EC2:
+
 1. Copy key to Public EC2:
 
 nano ~/.ssh/my-key.pem
-# Paste contents of my-key.pem
+Paste contents of my-key.pem
 chmod 400 ~/.ssh/my-key.pem
 
 SSH from Public EC2 to Private EC2:
