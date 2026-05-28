@@ -49,18 +49,31 @@ sudo systemctl start docker
 
 
 Step 3 — Run MySQL Replica on Private EC2
+
 services:
+
   mysql-replica:
+  
     image: mysql:8.0
+    
     container_name: mysql-replica
+    
     command: --server-id=2
+    
     environment:
+    
       - MYSQL_ROOT_PASSWORD=your_password
+      
       - MYSQL_DATABASE=bookstack
+      
       - MYSQL_USER=bookstack
+      
       - MYSQL_PASSWORD=your_password
+      
     ports:
+    
       - 3306:3306
+      
     restart: unless-stopped
 
 Step 4 — Configure Replica
