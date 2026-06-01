@@ -4,7 +4,7 @@
 Production-grade AWS infrastructure built from scratch featuring VPC networking, Dockerized web application with Blue-Green deployment strategy, MySQL primary-replica replication across public/private subnets, and automated S3 log storage using IAM roles.
 
 🏗️ Architecture
-![Architecture Diagram](architecture/Architecture-Diagram.png)
+![Architecture Diagram](architecture/Architecture-Diagram.jpeg)
 
  🛠️ Tech Stack
 - Cloud: AWS (VPC, EC2, S3, IAM, NAT Gateway)
