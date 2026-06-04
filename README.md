@@ -56,9 +56,15 @@ Future Improvements
 What can be added:
 
 -Load Balancer instead of single Nginx
+
 -Auto scaling for EC2 instances
+
 -CloudWatch monitoring and alerts
+
 -CI/CD pipeline with GitHub Actions
+
 -Terraform for infrastructure as code
+
 -SSL/HTTPS certificate
+
 -Automated blue-green switching
