@@ -6,7 +6,7 @@ Production-grade AWS infrastructure built from scratch featuring VPC networking,
 
 🏗️ Architecture
 
-![Architecture Diagram](architecture/Architecture-Diagram(2).jpeg)
+![Architecture Diagram](architecture/Architecture-Diagram (2).jpeg)
 
  🛠️ Tech Stack
 
