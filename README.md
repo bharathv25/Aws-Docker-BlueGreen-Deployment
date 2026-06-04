@@ -8,6 +8,22 @@ Production-grade AWS infrastructure built from scratch featuring VPC networking,
 
 ![Architecture Diagram](architecture/Architecture-diagram.jpeg)
 
+
+Problem Statement
+What problem does this solve?
+
+Traditional deployment problems:
+❌ Downtime during updates
+❌ No rollback if something breaks
+❌ Single point of failure for database
+❌ No log management
+
+Our solution:
+✅ Zero downtime with Blue-Green deployment
+✅ Instant rollback in 30 seconds
+✅ Database backup with MySQL replication
+✅ Automated log storage in S3
+
  🛠️ Tech Stack
 
 - Cloud: AWS (VPC, EC2, S3, IAM, NAT Gateway)
@@ -27,3 +43,13 @@ Production-grade AWS infrastructure built from scratch featuring VPC networking,
 - IAM Role based S3 Authentication
 - NAT Gateway for Private EC2 internet access
 
+Future Improvements
+What can be added:
+
+Load Balancer instead of single Nginx
+Auto scaling for EC2 instances
+CloudWatch monitoring and alerts
+CI/CD pipeline with GitHub Actions
+Terraform for infrastructure as code
+SSL/HTTPS certificate
+Automated blue-green switching
