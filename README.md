@@ -53,7 +53,6 @@ Our solution:
 - NAT Gateway for Private EC2 internet access
 
 Future Improvements
-What can be added:
 
 -Load Balancer instead of single Nginx
 
