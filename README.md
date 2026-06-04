@@ -10,18 +10,27 @@ Production-grade AWS infrastructure built from scratch featuring VPC networking,
 
 
 Problem Statement
+
 What problem does this solve?
 
 Traditional deployment problems:
+
 ❌ Downtime during updates
+
 ❌ No rollback if something breaks
+
 ❌ Single point of failure for database
+
 ❌ No log management
 
 Our solution:
+
 ✅ Zero downtime with Blue-Green deployment
+
 ✅ Instant rollback in 30 seconds
+
 ✅ Database backup with MySQL replication
+
 ✅ Automated log storage in S3
 
  🛠️ Tech Stack
